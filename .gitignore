@@ -96,4 +96,5 @@ uploads/
 
 # OS
 .DS_Store
-Thumbs.db
+Thumbs.dbbuild/
+.dart_tool/
