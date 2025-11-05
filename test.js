@@ -1,0 +1,10 @@
+const express = require('express');
+const app = express();
+
+app.get('/test', (req, res) => {
+  res.json({ message: 'Hello from Sosedi Backend!' });
+});
+
+app.listen(3001, () => {
+  console.log('Test server running on port 3001');
+}); 

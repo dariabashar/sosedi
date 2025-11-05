@@ -1,0 +1,60 @@
+name: sosedi
+description: "Локальная платформа для общения и обмена между жителями нескольких ЖК в радиусе 500 м. Найдите помощь, продайте/купите вещи, организуйте группы по интересам и будьте в курсе локальных событий."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.15.3
+  cloud_firestore: ^4.13.6
+  # firebase_storage: ^11.5.6  # Временно отключено - требует платный план
+  firebase_messaging: ^14.7.15
+  firebase_analytics: ^10.8.5
+  
+  # State Management
+  flutter_bloc: ^8.1.3
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.8.1
+
+  # UI/Utils
+  google_fonts: ^6.2.1
+  cached_network_image: ^3.3.1
+  image_picker: ^1.0.5
+  geolocator: ^10.1.0
+  intl: ^0.20.2
+  url_launcher: ^6.2.5
+  share_plus: ^7.2.2
+  cupertino_icons: ^1.0.2
+  geocoding: ^2.1.1
+  # HTTP клиент для API запросов
+  http: ^1.1.0
+  go_router: ^13.0.1
+  google_maps_flutter: ^2.5.3
+  # WebSocket для чатов
+  web_socket_channel: ^2.4.0
+  # 2GIS SDK для Flutter (если доступен)
+  # dgis_maps_flutter: ^1.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  # Code generation
+  build_runner: ^2.4.7
+  freezed: ^2.4.6
+  json_serializable: ^6.7.1
+  
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true

@@ -1,0 +1,1 @@
+ /Users/d.riabr/sosedi-main/.dart_tool/flutter_build/da42055571ef0e54298dda575c75539c/native_assets.json: 

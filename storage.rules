@@ -1,0 +1,38 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Пользователи могут загружать файлы только в свою папку
+    match /users/{userId}/{allPaths=**} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    // Посты - авторизованные пользователи могут читать, автор может писать
+    match /posts/{postId}/{allPaths=**} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+    }
+    
+    // Группы - авторизованные пользователи могут читать, участники могут писать
+    match /groups/{groupId}/{allPaths=**} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+    }
+    
+    // Объявления - авторизованные пользователи могут читать, автор может писать
+    match /advertisements/{adId}/{allPaths=**} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+    }
+    
+    // События - авторизованные пользователи могут читать, организатор может писать
+    match /events/{eventId}/{allPaths=**} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+    }
+    
+    // По умолчанию запрещаем доступ
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

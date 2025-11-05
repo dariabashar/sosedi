@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "529182563950",
+    "project_id": "sosedi-3a63b",
+    "storage_bucket": "sosedi-3a63b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:529182563950:android:aa41b0d9453ea61977507f",
+        "android_client_info": {
+          "package_name": "com.makan.sosedi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbdVkJabxomwW8twlmyvssMDdIbVtBe0Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:529182563950:android:cc61528bc0e9846777507f",
+        "android_client_info": {
+          "package_name": "com.sosedi.sosedi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbdVkJabxomwW8twlmyvssMDdIbVtBe0Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
